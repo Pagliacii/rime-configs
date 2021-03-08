@@ -21,9 +21,9 @@
 
 1. 如果使用的是小狼毫（Weasel）的话，那么就把文件下载到 ~%APPDATA%\rime~ 目录下，然后重新 Deploy 即可。也可以通过「开始菜单」-「小狼毫输入法」-「【小狼毫】用户文件夹」打开用户目录。
 
-2. 如果使用的是鼠须管（Squirrel）的话，那么就把文件下载到 ~~/Library/Rime~ 并重新 Deploy 即可。
+2. 如果使用的是鼠须管（Squirrel）的话，那么就把文件下载到 =~/Library/Rime= 并重新 Deploy 即可。
 
-3. 如果是在 ~Linux~ 上使用的话，可以安装基于 *IBus* 输入法框架的 [[https://github.com/rime/ibus-rime][ibus-rime]] 或基于 *Fcitx* 输入法框架的 [[https://github.com/fcitx/fcitx-rime][fcitx-rime]]（第三方软件）。这两种输入法的用户目录在 ~~/.config/{ibus,fcitx}/rime~ ，把文件下载到该目录并重新 Deploy 即可。
+3. 如果是在 ~Linux~ 上使用的话，可以安装基于 *IBus* 输入法框架的 [[https://github.com/rime/ibus-rime][ibus-rime]] 或基于 *Fcitx* 输入法框架的 [[https://github.com/fcitx/fcitx-rime][fcitx-rime]]（第三方软件）。这两种输入法的用户目录在 =~/.config/{ibus,fcitx}/rime= ，把文件下载到该目录并重新 Deploy 即可。
 
 * 安装示例
 以 ~Ubuntu~ 和 ~fcitx-rime~ 为例。
@@ -55,4 +55,4 @@ $ fcitx-autostart &>/dev/null
 
 接下来是打开 ~fcitx-configtool~ 添加 ~Rime~ 到 *Input Method* 列表。并且可以更改字体和皮肤设置，比如 [[https://github.com/hrko/fcitx-skin-material][fcitx-skin-material]] 和 [[https://github.com/Yucklys/fcitx-nord-skin][fcitx-nord-skin]]。
 
-最后是把这个仓库下的 ~yaml~ 文件下载到 ~~/.config/fcitx/rime~ 目录中去，并重新 Deploy 一下（比如通过 =ctrl+5= ）。
+最后是把这个仓库下的 ~yaml~ 文件下载到 =~/.config/fcitx/rime= 目录中去，并重新 Deploy 一下（比如通过 =ctrl+5= ）。
