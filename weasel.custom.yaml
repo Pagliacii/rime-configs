@@ -1,0 +1,14 @@
+patch:
+  style/color_scheme: lost_temple
+  style/inline_preedit: false
+  style/corner_radius:  10
+  style/border_height: 0
+  style/border_width: 0
+  style/line_spacing: 1
+  style/spacing: 5
+  style/display_tray_icon: true
+  style/horizontal: true
+  style/font_face: "Microsoft YaHei Mono"
+  style/font_point: 13
+  app_options/Code.exe:
+    ascii_mode: true

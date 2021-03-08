@@ -1,0 +1,58 @@
+#+TITLE:        Rime Configs
+#+AUTHOR:       Jason Huang (Pagliacii)
+#+EMAIL:        huangmianrui0310@outlook.com
+#+DATE:         <2021-03-08 Mon>
+
+#+DESCRIPTION:  Keeps my config files of Rime.
+#+KEYWORDS:     README, configs, RIME
+#+LANGUAGE:     zh-cn
+#+STARTUP:      content
+
+我的 [[https://rime.im/][Rime]] 输入法配置文件。
+
+* 配置说明
+
+1. 我使用的是小鹤双拼，即 ~double_pinyin_flypy.schema.yaml~ 。
+2. 我还保留了朙月简拼，另外添加了 ~emoji~ 和 ~jyutping~ 。
+3. 可以通过 =[= 和 =]= 来切换候选字，每页显示 7 个候选字。
+4. ~weasel.custom.yaml~ 是小狼毫的配置，设置了主题为 ~lost_temple~ 。
+
+* 使用方法
+
+1. 如果使用的是小狼毫（Weasel）的话，那么就把文件下载到 ~%APPDATA%\rime~ 目录下，然后重新 Deploy 即可。也可以通过「开始菜单」-「小狼毫输入法」-「【小狼毫】用户文件夹」打开用户目录。
+
+2. 如果使用的是鼠须管（Squirrel）的话，那么就把文件下载到 ~~/Library/Rime~ 并重新 Deploy 即可。
+
+3. 如果是在 ~Linux~ 上使用的话，可以安装基于 *IBus* 输入法框架的 [[https://github.com/rime/ibus-rime][ibus-rime]] 或基于 *Fcitx* 输入法框架的 [[https://github.com/fcitx/fcitx-rime][fcitx-rime]]（第三方软件）。这两种输入法的用户目录在 ~~/.config/{ibus,fcitx}/rime~ ，把文件下载到该目录并重新 Deploy 即可。
+
+* 安装示例
+以 ~Ubuntu~ 和 ~fcitx-rime~ 为例。
+
+首先，安装 ~fcitx~ 和 ~fcitx-rime~ 。
+
+#+begin_src shell
+$ sudo apt update
+$ sudo apt install -y fcitx fcitx-rime
+# 如果没有安装中文字体，请自行安装，如 fonts-wqy-zenhei 或 fonts-noto-cjk
+#+end_src
+
+其次是添加下面的几个环境变量：
+
+#+begin_src shell
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+export DefaultIMModule=fcitx
+#+end_src
+
+然后是后台启动 ~fcitx~ ：
+
+#+begin_src shell
+$ fcitx &
+# 也可以将以下命令添加到自启动中去
+$ fcitx-autostart &>/dev/null
+#+end_src
+
+接下来是打开 ~fcitx-configtool~ 添加 ~Rime~ 到 *Input Method* 列表。并且可以更改字体和皮肤设置，比如 [[https://github.com/hrko/fcitx-skin-material][fcitx-skin-material]] 和 [[https://github.com/Yucklys/fcitx-nord-skin][fcitx-nord-skin]]。
+
+最后是把这个仓库下的 ~yaml~ 文件下载到 ~~/.config/fcitx/rime~ 目录中去，并重新 Deploy 一下（比如通过 =ctrl+5= ）。
