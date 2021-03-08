@@ -12,7 +12,7 @@
 
 * 配置说明
 
-1. 我使用的是小鹤双拼，即 ~double_pinyin_flypy.schema.yaml~ 。默认是英文输入，需要按 ~Shift~ 切换成中文输入。如果是 ~emacs-rime~ ，则需要 ~M-x rime-inline-ascii~ 来切换。如果不想要默认英文输入，不下载 ~double_pinyin_flypy.custom.yaml~ 文件即可。
+1. 我使用的是小鹤双拼，即 ~double_pinyin_flypy.schema.yaml~ 。默认是英文输入，需要按 ~Shift_R~ 切换成中文输入。如果是 ~emacs-rime~ ，也可以通过 ~M-x rime-inline-ascii~ 来切换。如果不想要默认英文输入，不下载 ~double_pinyin_flypy.custom.yaml~ 文件即可。
 2. 我还保留了朙月简拼，另外添加了 ~emoji~ 和 ~jyutping~ 。
 3. 可以通过 =[= 和 =]= 来切换候选字，每页显示 7 个候选字。
 4. ~weasel.custom.yaml~ 是小狼毫的配置，设置了主题为 ~lost_temple~ 。
