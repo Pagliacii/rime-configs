@@ -1,0 +1,26 @@
+patch:
+  schema_list:
+    - {schema: double_pinyin_flypy}
+    - {schema: luna_pinyin}
+    - {schema: cangjie5}
+    - {schema: luna_pinyin_fluency}
+    - {schema: luna_pinyin_simp}
+    - {schema: luna_pinyin_tw}
+    - {schema: bopomofo}
+    - {schema: cangjie5_express}
+    - {schema: emoji}
+    - {schema: jyutping}
+  menu:
+    page_size: 7
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key:
+      Caps_Lock: noop
+      Shift_L: commit_code
+      Shift_R: inline_ascii
+      Control_L: inline_ascii
+      Control_R: commit_text
+  key_binder/bindings:
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
+  translator/preedit_format: {}

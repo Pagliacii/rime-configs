@@ -1,0 +1,5 @@
+# double_pinyin_flypy.custom.yaml
+patch:
+  translator/preedit_format: {}
+  switches:
+    - { name: ascii_mode, reset: 1 }
