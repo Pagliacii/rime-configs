@@ -1,0 +1,9 @@
+.cache/
+build/
+sync/
+trash/
+*.userdb/
+installation.yaml
+user.yaml
+custom_phrase*.txt
+flypy_user.txt

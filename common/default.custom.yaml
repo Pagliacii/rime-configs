@@ -1,0 +1,22 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.16.3
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Sun Dec 15 13:57:10 2024"
+  rime_version: 1.11.2
+patch:
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key: {Caps_Lock: noop, Control_L: inline_ascii, Control_R: commit_text, Shift_L: commit_code, Shift_R: inline_ascii}
+  "key_binder/bindings":
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
+  menu:
+    page_size: 7
+  schema_list:
+    - {schema: double_pinyin_flypy}
+    - {schema: luna_pinyin_simp}
+    - {schema: emoji}
+    - {schema: jyutping}
+  "translator/preedit_format":
+    {}
