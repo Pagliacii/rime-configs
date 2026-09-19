@@ -1,5 +1,8 @@
 # double_pinyin_flypy.custom.yaml
 patch:
+  # Reserve brackets for candidate paging, not select_character.
+  key_binder/select_first_character: ""
+  key_binder/select_last_character: ""
   translator/preedit_format: {}
   recognizer/patterns/punct: "^(?:V([0-9]|10|[A-Za-z]+)|/([A-Za-z]*|[0-9]|10))$"
   punctuator:
